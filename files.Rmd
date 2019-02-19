@@ -26,7 +26,7 @@ seems likely you'll have more than 10 files, left pad with zero:
 
 If you later realise that you've missed some steps, it's tempting to use `02a`, 
 `02b`, etc. However, I think it's generally better to bite the bullet and 
-rename all files.
+rename all files. (Note: Use of regular expressions with well named files makes renaming them a trivial task; e.g. sub(pattern = "(?=[[:digit:]]{2})", replacement = "0", x=test ,perl = TRUE) takes ##_Names to 0##_Names)
 
 Pay attention to capitalization, since you, or some of your collaborators, 
 might be using an operating system with a case-insensitive file system (e.g., 
